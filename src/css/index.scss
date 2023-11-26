@@ -1,0 +1,12 @@
+$primaryColor: #ba1313;
+
+@mixin contenedor($colorFondo){
+    background-color: $colorFondo;
+    width: 100%;
+    height: 750px;
+    border: 1px solid black;
+}
+
+.content{
+    @include contenedor(red)
+}
