@@ -1,8 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 .content {
-  background-color: red;
+  background-color: white;
   width: 100%;
-  height: 750px;
-  border: 1px solid black;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.content__gray {
+  background-color: #D9D9D9;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  background-color: #ba1313;
+  color: white;
+  text-decoration: none;
+  height: auto;
+}
+.title h2 {
+  font-family: "Bebas Neue";
+  font-size: 30px;
+}
+
+.articles {
+  height: 75%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  padding: 60px;
+}
+
+.cart {
+  background-color: #ba1313;
+  width: 350px;
+  height: 550px;
+  margin-right: 60px;
+  margin-left: 60px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 15px 15px 5px 5px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.cart .cart__img {
+  background-image: url("../../IMAGENES/jose-el-sonador.jpg");
+  width: 90%;
+  height: 65%;
+  border-radius: 15px;
+  background-size: cover;
+}
+.cart .cart__text {
+  width: 90%;
+  height: 25%;
+  color: white;
+  font-family: "Bebas Neue";
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+}
+.cart .cart__button {
+  color: #ba1313;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: bold;
+  border: 0;
+  border-radius: 50px;
+  width: 90%;
+  height: 10%;
+  background-color: white;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=index.css.map */
