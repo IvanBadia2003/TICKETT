@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+body {
+  background-color: white;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+.layout {
+  width: 100%;
+  height: auto;
+}
+.layout header {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  flex-direction: row;
+  background-color: #ba1313;
+}
+.layout header nav {
+  height: auto;
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+}
+
+.containerLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 25%;
+}
+.containerLogo img {
+  width: 70px;
+}
+
+.navegation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 65%;
+  font-family: "Bebas Neue";
+}
+.navegation ul {
+  justify-content: center;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+.navegation ul li {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.navegation ul li a {
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+  transition: all 300ms;
+}
+
+.navegation ul li a:hover {
+  font-size: 35px;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  width: 35%;
+}
+.icons ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.icons img {
+  width: 50px;
+  margin-right: 20px;
+}
+.icons .icons__hamburguer {
+  display: none;
+}
+.icons .icons__cart {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .navegation {
+    display: none;
+  }
+  .icons {
+    display: none;
+  }
+  .icons__hamburguer {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */
