@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/index.css">
+
 </head>
 
 <body>
@@ -37,7 +38,27 @@
 
         <main>
             <section class="content">
-                <a href="">adsfadsfdasf</a>
+                    <div class="carousel">
+                        <div class="carousel__item active">
+                            <div class="carousel__option">
+                                <h2>KLK ma G</h2>
+
+                                <button>VER MÁS</button>
+                            </div >
+
+                            <div class="carousel__img">
+
+                            </div>
+                        </div>
+                        <div class="carousel__item">
+                            <img src="../IMAGENES/jose-el-sonador.jpg" alt="Imagen 2">
+                        </div>
+                        <div class="carousel__item">
+                            <img src="../IMAGENES/las-mil-y-una-noches.jpg" alt="Imagen 3">
+                        </div>
+                    </div>
+                    <button class="prev-btn">Anterior</button>
+                    <button class="next-btn">Siguiente</button>
             </section>
         </main>
 
@@ -109,6 +130,32 @@
         </footer>
 
     </div>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        const prevBtn = document.querySelector(".prev-btn");
+        const nextBtn = document.querySelector(".next-btn");
+        const carouselInner = document.querySelector(".carousel");
+        const carouselItems = document.querySelectorAll(".carousel__item");
+        let currentIndex = 0;
+      
+        function showSlide(index) {
+          carouselInner.style.transform = `translateX(-${index * 100}%)`;
+        }
+      
+        prevBtn.addEventListener("click", function() {
+          currentIndex = (currentIndex === 0) ? carouselItems.length - 1 : currentIndex - 1;
+          showSlide(currentIndex);
+        });
+      
+        nextBtn.addEventListener("click", function() {
+          currentIndex = (currentIndex === carouselItems.length - 1) ? 0 : currentIndex + 1;
+          showSlide(currentIndex);
+        });
+      });
+      </script>
+
 </body>
 
 </html>

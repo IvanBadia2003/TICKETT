@@ -9,6 +9,8 @@ $primaryColor: #ba1313;
     height: auto;
     display: flex;
     flex-direction: column;
+    position: relative;
+    overflow: hidden;
 }
 
 @mixin title {
@@ -117,3 +119,56 @@ $primaryColor: #ba1313;
 
 }
 
+  .carousel {
+    padding: {
+        top: 80px;
+        bottom: 80px;
+    }
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel__item {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: $primaryColor;
+
+    padding: {
+        top: 30px;
+        bottom: 30px;
+    }
+
+    min-width: 100%;
+  }
+  
+  .prev-btn,
+  .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  .prev-btn {
+    left: 10px;
+  }
+  
+  .next-btn {
+    right: 10px;
+  }
+  
+
+  .carousel__img {
+    background-image: url('../../IMAGENES/jose-el-sonador.jpg');
+    width: 20%;
+    height: 100%;
+    border-radius: 15px;
+    background-size: cover;
+}
