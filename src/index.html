@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/index.css">
 
+
 </head>
 
 <body>
@@ -38,74 +39,55 @@
 
         <main>
             <section class="content">
-                <div class="carousel">
-                    <div class="carousel__item ">
-                        <div class="carousel__option">
-                            <h1>KLK ma G</h1>
-
-                            <button>VER MÁS</button>
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../IMAGENES/jose-el-sonador.jpg" class="d-block w-100" alt="...">
                         </div>
-
-                        <div class="carousel__img">
-
+                        <div class="carousel-item">
+                            <img src="../IMAGENES/jose-el-sonador.jpg" class="d-block w-100" alt="...">
                         </div>
-                    </div>
-
-
-                    <div class="carousel__item ">
-                        <div class="carousel__cart">
-                            <div class="carousel__text">
-                                <h1>TITULO</h1>
-                                <button class="carousel__button">VER MAS</button>
-                            </div>
-                            <div class="carousel__img">
-        
-                            </div>
+                        <div class="carousel-item">
+                            <img src="../IMAGENES/jose-el-sonador.jpg" class="d-block w-100" alt="...">
                         </div>
                     </div>
-
-
-                    <div class="carousel__item">
-                        <div class="carousel__option">
-                            <h1>KLK ma G</h1>
-
-                            <button>VER MÁS</button>
-                        </div>
-
-                        <div class="carousel__img">
-
-                        </div>
-                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <button class="prev-btn">Anterior</button>
-                <button class="next-btn">Siguiente</button>
             </section>
+            
         </main>
 
         <section class="content__gray">
             <div class="title">
                 <h2>PRÓXIMAS FUNCIONES</h2>
             </div>
-            <div class="articles">
-                <article class="cart">
-                    <div class="cart__img">
+            <div class="articlesFunction">
+                <article class="cartFunction">
+                    <div class="cartFunction__img">
 
                     </div>
-                    <div class="cart__text">
+                    <div class="cartFunction__text">
                         <h2>TITULO</h2>
                         <h3>Fecha</h3>
                     </div>
-                    <button class="cart__button">SELECCIONAR BUTACAS</button>
+                    <button class="cartFunction__button">SELECCIONAR BUTACAS</button>
                 </article>
-                <article class="cart">
-                    <div class="cart__img">
+                <article class="cartFunction">
+                    <div class="cartFunction__img">
 
                     </div>
-                    <div class="cart__text">
+                    <div class="cartFunction__text">
                         <h2>TITULO</h2>
                         <h3>Fecha</h3>
                     </div>
-                    <button class="cart__button">SELECCIONAR BUTACAS</button>
+                    <button class="cartFunction__button">SELECCIONAR BUTACAS</button>
                 </article>
             </div>
         </section>
@@ -114,30 +96,30 @@
             <div class="title">
                 <h2>INFORMACIÓN DE INTERES</h2>
             </div>
-            <div class="articles">
-                <article class="cart">
-                    <div class="cart__img">
+            <div class="articlesInformation">
+                <article class="cartInformation">
+                    <div class="cartInformation__img">
 
                     </div>
-                    <div class="cart__text">
+                    <div class="cartInformation__text">
                         <h2>TITULO</h2>
                         <h3>Fecha</h3>
                     </div>
                 </article>
-                <article class="cart">
-                    <div class="cart__img">
+                <article class="cartInformation">
+                    <div class="cartInformation__img">
 
                     </div>
-                    <div class="cart__text">
+                    <div class="cartInformation__text">
                         <h2>TITULO</h2>
                         <h3>Fecha</h3>
                     </div>
                 </article>
-                <article class="cart">
-                    <div class="cart__img">
+                <article class="cartInformation">
+                    <div class="cartInformation__img">
 
                     </div>
-                    <div class="cart__text">
+                    <div class="cartInformation__text">
                         <h2>TITULO</h2>
                         <h3>Fecha</h3>
                     </div>
@@ -146,35 +128,49 @@
 
 
         <footer class="footer">
-
+            <div class="footer__links">
+                <ul>
+                    <li><a href="">AVISO LEGAL</a></li>
+                    <li><a href="">POLITICA DE PRIVACIDAD</a></li>
+                    <li><a href="">POLITICA DE COOKIES</a></li>
+                </ul>
+            </div>
+            <div class="footer__links">
+                <div class="footer__title">
+                    <h2>TICKETT</h2>
+                </div>
+                <div class="footer__media">
+                    <img src="../iconos/icons8-facebook-100-blanco.png" alt="">
+                    <img src="../iconos/icons8-instagram-100-blanco.png" alt="">
+                    <img src="../iconos/icons8-twitterx-100.png" alt="">
+                </div>
+            </div>
+            <div class="footer__links">
+                <ul>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACTO</a></li>
+                    <li><a href="">FAQS</a></li>
+                </ul>
+            </div>
         </footer>
 
     </div>
 
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const prevBtn = document.querySelector(".prev-btn");
-            const nextBtn = document.querySelector(".next-btn");
-            const carouselInner = document.querySelector(".carousel");
-            const carouselItems = document.querySelectorAll(".carousel__item");
-            let currentIndex = 0;
-
-            function showSlide(index) {
-                carouselInner.style.transform = `translateX(-${index * 100}%)`;
-            }
-
-            prevBtn.addEventListener("click", function () {
-                currentIndex = (currentIndex === 0) ? carouselItems.length - 1 : currentIndex - 1;
-                showSlide(currentIndex);
-            });
-
-            nextBtn.addEventListener("click", function () {
-                currentIndex = (currentIndex === carouselItems.length - 1) ? 0 : currentIndex + 1;
-                showSlide(currentIndex);
+        // Inicializar el carousel cuando el documento esté listo
+        document.addEventListener('DOMContentLoaded', function () {
+            // Seleccionar el carousel por su ID y activar el desplazamiento automático
+            var myCarousel = document.getElementById('carouselExampleIndicators');
+            var carousel = new bootstrap.Carousel(myCarousel, {
+                interval: 2000, // Intervalo de tiempo en milisegundos entre transiciones de diapositivas
+                wrap: true // Indica si el carousel debe volver al inicio después de la última diapositiva
             });
         });
     </script>
+    
 
 </body>
 
