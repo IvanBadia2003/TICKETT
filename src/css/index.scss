@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 $primaryColor: #ba1313;
+$primaryFont: 'Bebas Neue';
+$secondlyFont: 'Montserrat';
 
 @mixin content($colorFondo) {
     background-color: $colorFondo;
@@ -9,8 +11,9 @@ $primaryColor: #ba1313;
     height: auto;
     display: flex;
     flex-direction: column;
-    position: relative;
     overflow: hidden;
+    position: relative;
+
 }
 
 @mixin title {
@@ -21,7 +24,7 @@ $primaryColor: #ba1313;
 
     h2 {
         font: {
-            family: 'Bebas Neue';
+            family: $primaryFont;
             size: 30px;
         }
     }
@@ -86,12 +89,13 @@ $primaryColor: #ba1313;
         background-size: cover;
     }
 
-    .cart__text{
+    .cart__text {
         width: 90%;
         height: 25%;
         color: white;
+
         font: {
-            family: 'Bebas Neue';
+            family: $primaryFont;
             size: 18px;
         }
 
@@ -101,13 +105,15 @@ $primaryColor: #ba1313;
         align-items: left;
     }
 
-    .cart__button{
+    .cart__button {
         color: $primaryColor;
+
         font: {
-            family: 'Montserrat';
+            family: $secondlyFont;
             size: 18px;
             weight: bold;
         }
+
         border: 0;
         border-radius: 50px;
         width: 90%;
@@ -119,33 +125,106 @@ $primaryColor: #ba1313;
 
 }
 
-  .carousel {
+
+
+ .carousel {
+    width: 100%;
+    height: 600px;
+
     padding: {
         top: 80px;
         bottom: 80px;
     }
-    display: flex;
-    transition: transform 0.5s ease;
-  }
-  
-  .carousel__item {
-    height: auto;
+
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: $primaryColor;
+    transition: transform 0.5s ease;
 
-    padding: {
-        top: 30px;
-        bottom: 30px;
+    .carousel__item {
+    
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: $primaryColor;
+    
+        padding: {
+            top: 30px;
+            bottom: 30px;
+        }
+    
+        min-width: 100%;
+        
+        .carousel__cart{
+            height: 100%;
+            width:  100%;
+            background-color: #333;
+        
+            margin: {
+                right: 60px;
+                left: 60px;
+                top: 30px;
+                bottom: 30px;
+            }
+        
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-grow: 1;
+        }
+
+    }
+}
+
+
+.carousel__text{
+    background-color: #D9D9D9;
+    width: 50%;
+    height: 70%;
+    
+    h1{
+        height: 25%;
+        color: white;
+
+        font: {
+            family: $primaryFont;
+            size: 60px;
+        }
     }
 
-    min-width: 100%;
-  }
-  
-  .prev-btn,
-  .next-btn {
+    button{
+        color: $primaryColor;
+
+        font: {
+            family: $secondlyFont;
+            size: 18px;
+            weight: bold;
+        }
+
+        border: 0;
+        border-radius: 50px;
+        width: 90%;
+        height: 55px;
+        background-color: white;
+        cursor: pointer;
+
+    
+    }
+}
+
+.carousel__img {
+    background-image: url('../../IMAGENES/jose-el-sonador.jpg');
+    width: 50%;
+    height: 100%;
+    border-radius: 15px;
+    background-size: cover;
+} 
+
+
+.prev-btn,
+.next-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -154,21 +233,12 @@ $primaryColor: #ba1313;
     border: none;
     padding: 8px 16px;
     cursor: pointer;
-  }
-  
-  .prev-btn {
-    left: 10px;
-  }
-  
-  .next-btn {
-    right: 10px;
-  }
-  
+}
 
-  .carousel__img {
-    background-image: url('../../IMAGENES/jose-el-sonador.jpg');
-    width: 20%;
-    height: 100%;
-    border-radius: 15px;
-    background-size: cover;
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
 }
