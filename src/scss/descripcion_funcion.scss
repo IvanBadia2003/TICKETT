@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+$primaryColor: #ba1313;
+$primaryFont: 'Bebas Neue';
+$secondlyFont: 'Montserrat';
+
+@mixin content($height){
+    width: 100%;
+    height: $height;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: {
+        top: 16px;
+        bottom: 16px;
+    }
+
+    border: 1px solid aqua;
+
+    h3{
+        font: {
+            family: $secondlyFont;
+        }
+        color: $primaryColor;
+    }
+}
+
+@mixin data{
+    border: 1px solid gray;
+    text-align: left;
+
+    padding: 16px;
+    margin: 16px;
+
+    border-radius: 7px;
+
+     h3{
+        font: {
+            family: $secondlyFont;
+        }
+        color: black;
+        padding: 5px;
+    } 
+}
+
+section{
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+
+    h3{
+        margin: 0;
+    }
+}
+
+.principal{
+    @include content(50%);
+
+    h2{
+        font: {
+            family: $primaryFont;
+        }
+    }
+
+    img {
+        border-radius: 21px;
+    }
+
+}
+.date{
+    @include content(25%);
+
+
+
+    &__data{
+        @include data();
+
+    }
+}
+.information{
+    @include content(25%);
+
+    &__data{
+        @include data();
+    }
+}
+
+.description{
+    @include content(50%);
+
+    div{
+        margin: {
+            left: 30px;
+            right: 30px;
+        }
+        text-align: left ;
+
+        p{
+            text-align: justify;
+
+        }
+    }
+
+}
+
+.cast{
+    @include content(50%);
+
+}
