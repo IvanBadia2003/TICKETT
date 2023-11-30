@@ -30,16 +30,16 @@ $secondlyFont: 'Montserrat';
     }
 }
 
-@mixin cart($width, $height) {
+@mixin card($width, $height) {
     background-color: $primaryColor;
     width: $width;
     height: $height;
 
     margin: {
-        right: 60px;
-        left: 60px;
-        top: 30px;
-        bottom: 30px;
+        right: 6%;
+        left: 6%;
+        top: 3%;
+        bottom: 3%;
     }
 
     border-radius: 15px 15px 5px 5px;
@@ -53,6 +53,7 @@ $secondlyFont: 'Montserrat';
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    cursor: default;
 
 }
 
@@ -92,7 +93,10 @@ $secondlyFont: 'Montserrat';
     justify-content: center;
     align-items: center;
     flex-grow: 1;
-    padding: 60px;
+    padding: {
+        top: 60px;
+        bottom: 60px;
+    } 
 
     @media screen and (max-width: 767px) {
         flex-flow: row;
@@ -108,27 +112,31 @@ $secondlyFont: 'Montserrat';
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    flex-grow: 1;
     padding: 60px;
 
 }
 
 // CARTAS DE FUNCION
-.cartFunction {
-    @include cart(350px, 550px);
+.cardFunction {
+    @include card(350px, 550px);
 
-    .cartFunction__img {
-        background-image: url('../../IMAGENES/jose-el-sonador.jpg');
+    .cardFunction__img {
         width: 90%;
-        height: 65%;
-        border-radius: 15px;
-        background-size: cover;
+        height: auto;
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+
+        }
     }
 
-    .cartFunction__text {
+    .cardFunction__text {
         width: 90%;
         height: 25%;
         color: white;
+        text-align: left;
 
         font: {
             family: $primaryFont;
@@ -151,7 +159,7 @@ $secondlyFont: 'Montserrat';
         align-items: left;
     }
 
-    .cartFunction__button {
+    .cardFunction__button {
         color: $primaryColor;
 
         font: {
@@ -171,26 +179,27 @@ $secondlyFont: 'Montserrat';
 
     // TAMAÑO MOVIL
     @media screen and (max-width: 767px) {
-        @include cart(150px, 250px);
-        margin-left: 10%;
-        margin-right: 10%;
+        @include card(250px, 250px);
+        margin: 5%;
 
         position: relative;
 
-        .cartFunction__text {
+        .cardFunction__text {
+            padding: {
+                top: 6px;
+                bottom: 6px;
+            }
             font: {
                 size: 16px;
             }
         }
 
-        .cartFunction__button {
+        .cardFunction__button {
             text-align: center;
+
             font: {
                 size: 9px;
             }
-
-           padding-left: 30px;
-           padding-right: 30px
 
         }
 
@@ -198,10 +207,10 @@ $secondlyFont: 'Montserrat';
 }
 
 // CARTA DE INFORMACION
-.cartInformation {
-    @include cart(350px, 550px);
+.cardInformation {
+    @include card(350px, 550px);
 
-    .cartInformation__img {
+    .cardInformation__img {
         background-image: url('../../IMAGENES/jose-el-sonador.jpg');
         width: 90%;
         height: 65%;
@@ -209,7 +218,7 @@ $secondlyFont: 'Montserrat';
         background-size: cover;
     }
 
-    .cartInformation__text {
+    .cardInformation__text {
         width: 90%;
         height: 25%;
         color: white;
@@ -227,114 +236,11 @@ $secondlyFont: 'Montserrat';
 
 
     @media screen and (max-width: 767px) {
-        @include cart(150px, 250px);
+        @include card(150px, 250px);
 
 
     }
 }
 
 
-/* .footer{
-    width: 100%;
-    height: auto;
-    background-color: $primaryColor;
 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-    .footer__links{
-        @include footerDivs();
-    }
-}
-
-.footer__title{
-    height: 40%;
-    width: 100%;
-    border: 1px solid black;
-}
-
-.footer__media{
-    height: 60%;
-    width: 100%;
-
-    display: flex;
-    border: 1px solid black;
-    img{
-        max-width: 100%;
-        height: auto;
-    }
-} */
-
-// Estilos generales del footer
-.footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: $primaryColor;
-    color: white;
-    font-family: Arial, sans-serif;
-    font-size: 14px; // Tamaño de fuente base
-
-    .footer__links {
-        flex: 1;
-        margin-bottom: 20px;
-
-        ul {
-            list-style: none;
-            padding: 0;
-
-            li {
-                margin-bottom: 20px;
-
-                a {
-                    font: {
-                        family: $primaryFont;
-                        size: 18px;
-                    }
-
-                    text-decoration: none;
-                    color: white;
-
-                }
-            }
-        }
-
-        .footer__title {
-            h2 {
-
-                font: {
-                    family: $primaryFont;
-                    size: 48px;
-                }
-
-                text-decoration: underline;
-
-                margin-bottom: 10px;
-            }
-        }
-
-        .footer__media {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-
-            img {
-                max-width: 20%; // Hacer que las imágenes sean responsive
-                height: auto;
-            }
-        }
-    }
-
-    // Media query para hacerlo responsive
-    @media screen and (max-width: 767px) {
-        font-size: 12px; // Reducir el tamaño de fuente base en pantallas pequeñas
-
-        .footer__media {
-            img {
-                max-width: 20%; // Reducir el tamaño de las imágenes en pantallas pequeñas
-            }
-        }
-    }
-}

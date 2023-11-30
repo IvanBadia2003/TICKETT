@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+$primaryColor: #ba1313;
+$primaryFont: 'Bebas Neue';
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: $primaryColor;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 14px; // Tamaño de fuente base
+
+    .footer__links {
+        flex: 1;
+        margin-bottom: 20px;
+
+        ul {
+            list-style: none;
+            padding: 0;
+
+            li {
+                margin-bottom: 20px;
+
+                a {
+                    font: {
+                        family: $primaryFont;
+                        size: 18px;
+                    }
+
+                    text-decoration: none;
+                    color: white;
+
+                }
+            }
+        }
+
+        .footer__title {
+            h2 {
+
+                font: {
+                    family: $primaryFont;
+                    size: 48px;
+                }
+
+                text-decoration: underline;
+
+                margin-bottom: 10px;
+            }
+        }
+
+        .footer__media {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            img {
+                max-width: 20%; // Hacer que las imágenes sean responsive
+                height: auto;
+            }
+        }
+    }
+
+    // Media query para hacerlo responsive
+    @media screen and (max-width: 767px) {
+        font-size: 12px; // Reducir el tamaño de fuente base en pantallas pequeñas
+
+        .footer__media {
+            img {
+                max-width: 20%; // Reducir el tamaño de las imágenes en pantallas pequeñas
+            }
+        }
+    }
+}

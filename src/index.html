@@ -7,12 +7,15 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/footer.css">
 
 
 </head>
 
 <body>
     <div class="layout">
+
+        <!-- HEADER -->
         <header>
             <div class="containerLogo">
                 <img src="../iconos/LOGO.png" alt="LOGO">
@@ -21,7 +24,7 @@
                 <div class="navegation">
                     <ul>
                         <li><a href="#">INICIO</a></li>
-                        <li><a href="#">FUNCIONES</a></li>
+                        <li><a href="html/funciones.html">FUNCIONES</a></li>
                         <li><a href="#">INFORMACION</a></li>
                         <li><a href="#">CONTACTO</a></li>
                     </ul>
@@ -36,7 +39,9 @@
                 </div>
             </nav>
         </header>
+        <!-- FIN HEADER -->
 
+        <!-- CAROUSEL -->
         <main>
             <section class="content">
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -51,82 +56,89 @@
                             <img src="../IMAGENES/jose-el-sonador.jpg" class="d-block w-100" alt="...">
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
             </section>
-            
         </main>
+        <!-- FIN CAROUSEL -->
 
+        <!-- PRÓXIMAS FUNCIONES -->
         <section class="content__gray">
             <div class="title">
                 <h2>PRÓXIMAS FUNCIONES</h2>
             </div>
             <div class="articlesFunction">
-                <article class="cartFunction">
-                    <div class="cartFunction__img">
-
+                <article class="cardFunction">
+                    <div class="cardFunction__img">
+                        <img src="../IMAGENES/jose-el-sonador.jpg" alt="">
                     </div>
-                    <div class="cartFunction__text">
+                    <div class="cardFunction__text">
                         <h2>TITULO</h2>
                         <h3>Fecha</h3>
                     </div>
-                    <button class="cartFunction__button">SELECCIONAR BUTACAS</button>
+                    <button class="cardFunction__button">SELECCIONAR BUTACAS</button>
                 </article>
-                <article class="cartFunction">
-                    <div class="cartFunction__img">
+                <article class="cardFunction">
+                    <div class="cardFunction__img">
+                        <img src="../IMAGENES/jose-el-sonador.jpg" alt="">
 
                     </div>
-                    <div class="cartFunction__text">
+                    <div class="cardFunction__text">
                         <h2>TITULO</h2>
                         <h3>Fecha</h3>
                     </div>
-                    <button class="cartFunction__button">SELECCIONAR BUTACAS</button>
+                    <button class="cardFunction__button">SELECCIONAR BUTACAS</button>
                 </article>
             </div>
         </section>
+        <!-- FIN PRÓXIMAS FUNCINES -->
 
+        <!-- INFORMACIÓN DE INTERÉS -->
         <section class="content">
             <div class="title">
                 <h2>INFORMACIÓN DE INTERES</h2>
             </div>
             <div class="articlesInformation">
-                <article class="cartInformation">
-                    <div class="cartInformation__img">
+                <article class="cardInformation">
+                    <div class="cardInformation__img">
 
                     </div>
-                    <div class="cartInformation__text">
+                    <div class="cardInformation__text">
                         <h2>TITULO</h2>
                         <h3>Fecha</h3>
                     </div>
                 </article>
-                <article class="cartInformation">
-                    <div class="cartInformation__img">
+                <article class="cardInformation">
+                    <div class="cardInformation__img">
 
                     </div>
-                    <div class="cartInformation__text">
+                    <div class="cardInformation__text">
                         <h2>TITULO</h2>
                         <h3>Fecha</h3>
                     </div>
                 </article>
-                <article class="cartInformation">
-                    <div class="cartInformation__img">
+                <article class="cardInformation">
+                    <div class="cardInformation__img">
 
                     </div>
-                    <div class="cartInformation__text">
+                    <div class="cardInformation__text">
                         <h2>TITULO</h2>
                         <h3>Fecha</h3>
                     </div>
             </div>
         </section>
+        <!-- FIN INFORMACIÓN DE INTERÉS -->
 
-
+        <!-- FOOTER -->
         <footer class="footer">
             <div class="footer__links">
                 <ul>
@@ -153,6 +165,7 @@
                 </ul>
             </div>
         </footer>
+        <!-- FIN FOOTER -->
 
     </div>
 
@@ -170,7 +183,7 @@
             });
         });
     </script>
-    
+
 
 </body>
 
