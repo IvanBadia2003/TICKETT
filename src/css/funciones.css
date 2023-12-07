@@ -4,14 +4,16 @@
   width: 100%;
   height: auto;
   display: flex;
+  flex-direction: column;
 }
 
 .functions {
   background-color: black;
-  width: 70%;
+  width: 100%;
   height: auto;
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-evenly;
 }
 .functions a {
   text-decoration: none;
@@ -21,20 +23,23 @@
   width: auto;
   height: auto;
   margin: 10px;
-  flex-grow: 1;
   flex-basis: calc(50% - 20px);
   border-radius: 15px 15px 5px 5px;
   transition: all 300ms ease;
+  cursor: pointer;
   /* PARA ORDENADORES */
 }
-.functions .card img {
-  width: 90%;
-  height: auto;
-  border-radius: 15px;
+.functions .card .imgContainer {
+  height: 65%;
   margin-top: 5%;
 }
+.functions .card .imgContainer img {
+  width: 90%;
+  height: 100%;
+  border-radius: 15px;
+}
 .functions .card__description {
-  height: 70%;
+  height: auto;
   color: white;
   text-align: left;
 }
@@ -62,6 +67,7 @@
 }
 
 .sidebar {
+  display: none;
   position: fixed;
   right: 0;
   background-color: blue;
@@ -73,7 +79,7 @@
   width: 100%;
   height: auto;
   position: relative;
-  margin-top: 20%;
+  margin-top: 10%;
 }
 .sidebar .filter__search {
   width: 100%;
@@ -111,7 +117,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  margin-right: 50%;
+  margin-left: 50%;
   font-size: 13px;
   font-family: "Montserrat";
 }
@@ -135,14 +143,42 @@
   background-color: #ba1313;
 }
 
+.iconFilter {
+  display: block;
+  height: 15px;
+  width: 15px;
+  background-color: #ba1313;
+  margin-left: 90%;
+  margin-top: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
 /* PARA ORDENADORES */
 @media screen and (min-width: 767px) {
+  .functions {
+    width: 70%;
+    margin: 15px;
+  }
+  .functions .card {
+    flex-basis: calc(33% - 20px);
+  }
+  .sidebar {
+    display: block !important;
+  }
   .sidebar .filter__search img {
     left: 82%;
     width: 25px;
   }
   .sidebar .filter__gender ul {
     font-size: 18px;
+  }
+  .iconFilter {
+    display: none;
+  }
+  .close {
+    display: none;
   }
 }
 
