@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merryweather');
+
 
 $primaryColor: #ba1313;
 $primaryFont: 'Bebas Neue';
-$secondlyFont: 'Montserrat';
+$secondFont: 'Montserrat';
+$thirdFont: 'Merryweather';
 
-@mixin content($height){
-    width: 100%;
+@mixin content($width, $height) {
+    width: $width;
     height: $height;
 
     display: flex;
@@ -21,15 +24,16 @@ $secondlyFont: 'Montserrat';
 
     border: 1px solid aqua;
 
-    h3{
+    h3 {
         font: {
-            family: $secondlyFont;
+            family: $secondFont;
         }
+
         color: $primaryColor;
     }
 }
 
-@mixin data{
+@mixin data {
     border: 1px solid gray;
     text-align: left;
 
@@ -38,68 +42,135 @@ $secondlyFont: 'Montserrat';
 
     border-radius: 7px;
 
-     h3{
+    h3 {
         font: {
-            family: $secondlyFont;
+            family: $secondFont;
         }
+
         color: black;
         padding: 5px;
-    } 
+    }
 }
 
-section{
+.content {
+    width: 99.8%;
+    height: auto;
+
+}
+
+section {
     width: 100%;
     height: auto;
     border: 1px solid black;
 
-    h3{
+    h3 {
         margin: 0;
     }
 }
 
-.principal{
-    @include content(50%);
+.principal {
+    @include content(100%, 50%);
 
-    h2{
+    h2 {
         font: {
             family: $primaryFont;
         }
     }
 
-    img {
-        border-radius: 21px;
+    div {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+
+        img {
+            border-radius: 21px;
+        }
+
+        a {
+            color: $primaryColor;
+            text-decoration: none;
+
+            margin-top: 15px;
+
+            font: {
+                family: $secondFont;
+                size: 18px;
+                weight: bold;
+            }
+
+            border-radius: 50px;
+            border: 3px solid $primaryColor;
+            width: 90%;
+
+        }
     }
 
+
 }
-.date{
-    @include content(25%);
+
+.date {
+    @include content(100%, 25%);
 
 
 
-    &__data{
+    &__data {
         @include data();
 
     }
 }
-.information{
-    @include content(25%);
 
-    &__data{
+.information {
+    @include content(100%, 25%);
+
+    &__data {
         @include data();
     }
 }
 
-.description{
-    @include content(50%);
+.description {
+    @include content(100%, 50%);
 
-    div{
+    div {
         margin: {
             left: 30px;
             right: 30px;
         }
-        text-align: left ;
 
-        p{
+        text-align: left;
+
+        p {
+            font: {
+                size: 18px;
+                family: $thirdFont;
+            }
+
+            text-align: justify;
+
+        }
+    }
+
+
+
+}
+
+.cast {
+    @include content(100%, 50%);
+
+    div {
+        margin: {
+            left: 30px;
+            right: 30px;
+        }
+
+        text-align: left;
+
+        ul {
+            font: {
+                size: 18px;
+                family: $thirdFont;
+            }
+
             text-align: justify;
 
         }
@@ -107,7 +178,126 @@ section{
 
 }
 
-.cast{
-    @include content(50%);
+/* PARA ORDENADORES */
+@media screen and (min-width: 767px) {
 
+
+    section:first-child{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .principal{
+        @include content(50%, 100%);
+        align-items: center;
+        margin-right: 3%;
+
+        h2 {
+            font: {
+                size: 48px;
+            }
+        }
+    
+        div {
+            background-color: aquamarine;
+            height: 300px;
+            width: 300px;
+
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+    
+            img {
+                border-radius: 21px;
+            }
+    
+            a {
+                color: $primaryColor;
+                text-decoration: none;
+    
+                margin-top: 15px;
+    
+                font: {
+                    family: $secondFont;
+                    size: 18px;
+                    weight: bold;
+                }
+    
+                border-radius: 50px;
+                border: 3px solid $primaryColor;
+                width: 90%;
+    
+            }
+        }
+    
+
+    }
+
+    .secundary{
+        @include content(50%, 100%);
+        margin-left: 3%;
+        margin-top: 150px;
+
+
+        .date{
+            @include content(100%, 50%);
+        }
+
+        .information{
+            @include content(100%, 50%);
+
+        }
+
+    }
+
+
+    .description {
+
+        align-items: flex-start;
+
+        h3{
+            margin: {
+                left: 120px;
+            }
+        }
+
+        div {
+            margin: {
+                left: 120px;
+                right: 120px;
+            }
+
+            p {
+                font: {
+                    size: 20px;
+                }
+            }
+        }
+    }
+
+    .cast {
+        align-items: flex-start;
+
+        h3{
+            margin: {
+                left: 120px;
+            }
+        }
+
+        div {
+
+            margin: {
+                left: 120px;
+                right: 120px;
+            }
+            ul {
+
+                padding: 0;
+    
+            }
+        }
+    
+    }
 }

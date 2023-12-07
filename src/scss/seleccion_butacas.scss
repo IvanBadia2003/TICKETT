@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merryweather');
+
+
+$primaryColor: #ba1313;
+$primaryFont: 'Bebas Neue';
+$secondFont: 'Montserrat';
+$thirdFont: 'Merryweather';
+
+@mixin h2(){
+    margin: {
+        top: 5%;
+        bottom: 0;
+        left: 6%;
+        right: 6%;
+    }
+
+    font-family: $primaryFont;
+}
+
+@mixin h3(){
+    margin: {
+        top: 0;
+        bottom: 5%;
+    }
+
+    font-family: $secondFont;
+}
+
+
+.content {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    background-color: #6C78A3;
+    align-items: center;
+    justify-content: center;
+
+    &__text {
+        width: 50%;
+        height: auto;
+        background-color: #fff;
+
+        margin: {
+            top: 5px;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h2 {
+                @include h2();
+            }
+
+            h3 {
+                @include h3();
+            }
+        }
+
+    }
+
+    &__img {
+        width: 50%;
+        height: 100%;
+
+        background-color: #fff;
+
+        margin: {
+            top: 5px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            margin-top: 5%;
+        }
+
+    }
+}
+
+
+.selection {
+    width: 100%;
+    height: 500px;
+
+    background-color: #6ca37a;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .title {
+        width: 100%;
+        height: 15%;
+        background-color: brown;
+        @include h2();
+    }
+
+    .gridButacas {
+        background-color: rgb(170, 170, 103);
+        width: 100%;
+        height: 70%;
+    }
+
+    .button {
+        background-color: palegoldenrod;
+        width: 100%;
+        height: 15%;
+        a {
+            color: #ffffff;
+            text-decoration: none;
+            background-color: $primaryColor;
+            padding: 2%;
+
+            font: {
+                family: $secondFont;
+                size: 18px;
+            }
+
+            border-radius: 50px;
+
+        }
+    }
+}
+
+/* PARA ORDENADORES */
+@media screen and (min-width: 767px) {
+
+
+    .info {
+
+        &__img {
+            width: 30%;
+
+
+        }
+    }
+}

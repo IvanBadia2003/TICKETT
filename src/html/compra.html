@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/compra.css">
+</head>
+
+<body>
+    <div class="content">
+        <div class="info">
+            <div>
+                <h2>RESUMEN DE LA COMPRA</h2>
+            </div>
+
+            <div>
+                <h2>TITULO DE LA FUNCIÓN</h2>
+                <h3>TITULO DE LA FUNCIÓN</h3>
+            </div>
+            <div>
+                <h2>HORA DE LA FUNCIÓN</h2>
+                <h3>HORA DE LA FUNCIÓN</h3>
+            </div>
+            <div>
+                <h2>BUTACAS SELECCIONADAS</h2>
+                <h3>HORA DE LA FUNCIÓN</h3>
+            </div>
+        </div>
+        <div class="pago">
+            <div>
+                <input type="radio" id="opcion1" name="opciones" value="opcion1" checked>
+                <label for="opcion1">
+                    <img src="../../iconos/527px-PayPal_logo.svg.png" alt="">
+                </label>
+            </div>
+
+            <div>
+                <input type="radio" id="opcion2" name="opciones" value="opcion2">
+                <label for="opcion2">
+                    <img src="../../iconos/58482363cef1014c0b5e49c1.png" alt="">
+                    <img src="../../iconos/MasterCard_Logo.svg.png" alt="">
+                    <img src="../../iconos/visa-electron-logo-71BEC57E8F-seeklogo.com.png" alt="">
+
+                </label>
+            </div>
+            <div id="menuOpcion1" class="menu">
+                <div>
+                    <label>CORREO ELECTRÓNICO</label>
+                    <input type="email" class="email" placeholder="example@example.com">
+                </div>
+
+                <div>
+                    <label>CONTRASEÑA</label>
+                    <input type="password" class="password" placeholder="Contraseña123">
+                </div>
+
+
+            </div>
+
+            <div id="menuOpcion2" class="menu" style="display: none;">
+                <div>
+                    <label >TITULAR DE LA TARJETA</label>
+                    <input type="texy" class="text" placeholder="NOMBRE APELLIDO APELLIDO">
+                </div>
+                <div>
+                    <label>NUMERO DE TARJETA</label>
+                    <input type="email" class="email" placeholder="XXXXXXXXXXXXXXXX">
+                </div>
+
+                <div>
+                    <label>FECHA DE CADUCIDAD</label>
+                    <input type="password" class="password" placeholder="MM/AAAA">
+                </div>
+                <div>
+                    <label>CVV</label>
+                    <input type="password" class="password" placeholder="123">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="buttons">
+            <a href="../html/seleccion_butacas.html">CANCELAR</a>
+            <a href="../index.html">PAGAR</a>
+        </div>
+    </div>
+
+    <script src="../js/compra.js"></script>
+</body>
+
+</html>
