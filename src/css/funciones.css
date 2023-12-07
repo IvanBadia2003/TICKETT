@@ -8,7 +8,6 @@
 }
 
 .functions {
-  background-color: black;
   width: 100%;
   height: auto;
   display: flex;
@@ -70,12 +69,10 @@
   display: none;
   position: fixed;
   right: 0;
-  background-color: blue;
   width: 30%;
   height: auto;
 }
 .sidebar .filter {
-  background-color: yellow;
   width: 100%;
   height: auto;
   position: relative;
@@ -84,7 +81,6 @@
 .sidebar .filter__search {
   width: 100%;
   height: auto;
-  background-color: aqua;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -92,7 +88,6 @@
 .sidebar .filter__search input {
   width: 90%;
   border-radius: 50px;
-  border: 2px solid #ba1313;
   height: 30px;
 }
 .sidebar .filter__search img {
@@ -104,14 +99,12 @@
 .sidebar .filter__gender {
   width: 100%;
   height: auto;
-  background-color: bisque;
   display: flex;
   justify-content: center;
 }
 .sidebar .filter__gender ul {
   width: 100%;
   padding: 0;
-  background-color: blueviolet;
   list-style: none;
   text-align: left;
   display: flex;
@@ -127,19 +120,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: brown;
   padding: 2%;
 }
-.sidebar .filter__gender ul li input[type=checkbox] {
+.sidebar .filter__gender ul li input {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   width: 20px;
   height: 20px;
-  border: 1px solid #000;
+  border: 1px solid #ba1313;
   background-color: #fff;
 }
-.sidebar .filter__gender ul li input[type=checkbox]:checked {
+.sidebar .filter__gender ul li input:checked {
   background-color: #ba1313;
 }
 

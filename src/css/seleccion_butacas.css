@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Merryweather");
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.info {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #6C78A3;
+  align-items: center;
+  justify-content: center;
+}
+.info__text {
+  width: 50%;
+  height: auto;
+  background-color: #fff;
+  margin-top: 5px;
+}
+.info__text div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.info__text div h2 {
+  margin-top: 5%;
+  margin-bottom: 0;
+  margin-left: 6%;
+  margin-right: 6%;
+  font-family: "Bebas Neue";
+}
+.info__text div h3 {
+  margin-top: 0;
+  margin-bottom: 5%;
+  font-family: "Montserrat";
+}
+.info__img {
+  width: 50%;
+  height: 100%;
+  background-color: #fff;
+  margin-top: 5px;
+}
+.info__img img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  margin-top: 5%;
+}
+
+.selection {
+  width: 100%;
+  height: 500px;
+  background-color: #6ca37a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.selection .title {
+  width: 100%;
+  height: 15%;
+  background-color: brown;
+  margin-top: 5%;
+  margin-bottom: 0;
+  margin-left: 6%;
+  margin-right: 6%;
+  font-family: "Bebas Neue";
+}
+.selection .gridButacas {
+  background-color: rgb(170, 170, 103);
+  width: 100%;
+  height: 70%;
+}
+.selection .button {
+  background-color: palegoldenrod;
+  width: 100%;
+  height: 15%;
+}
+.selection .button a {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #ba1313;
+  padding: 2%;
+  font-family: "Montserrat";
+  font-size: 18px;
+  border-radius: 50px;
+}
+
+/* PARA ORDENADORES */
+@media screen and (min-width: 767px) {
+  .info__img {
+    width: 30%;
+  }
+}
+
+/*# sourceMappingURL=seleccion_butacas.css.map */
