@@ -52,7 +52,7 @@ section h3 {
   font-weight: bold;
   border-radius: 50px;
   border: 3px solid #ba1313;
-  width: 90%;
+  width: 98%;
 }
 
 .date {
@@ -161,7 +161,7 @@ section h3 {
 
 /* PARA ORDENADORES */
 @media screen and (min-width: 767px) {
-  section {
+  .first {
     flex-direction: row;
     justify-content: center;
   }
@@ -175,7 +175,6 @@ section h3 {
     padding-top: 16px;
     padding-bottom: 16px;
     align-items: center;
-    margin-right: 3%;
   }
   .principal h3 {
     font-family: "Montserrat";
@@ -186,7 +185,7 @@ section h3 {
   }
   .principal div {
     background-color: aquamarine;
-    height: 300px;
+    height: 100%;
     width: 300px;
     display: flex;
     flex-direction: column;
@@ -205,7 +204,7 @@ section h3 {
     font-weight: bold;
     border-radius: 50px;
     border: 3px solid #ba1313;
-    width: 90%;
+    width: 98%;
   }
   .secundary {
     width: 50%;
@@ -216,7 +215,7 @@ section h3 {
     align-items: center;
     padding-top: 16px;
     padding-bottom: 16px;
-    margin-left: 3%;
+    margin-left: 0;
     margin-top: 0;
   }
   .secundary h3 {
