@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+body {
+  text-align: center !important;
+}
+
 .content {
   background-color: white;
   width: 100%;
@@ -45,6 +49,32 @@
   .articlesFunction {
     flex-flow: row;
   }
+}
+
+.carousel {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.carousel-inner {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #ba1313;
+}
+.carousel-inner .carousel-item div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 356px;
+}
+.carousel-inner .carousel-item div .info {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.carousel-inner .carousel-item div .info h1 {
+  font-family: "Bebas Neue";
+  color: #ffffff !important;
 }
 
 .articlesInformation {
@@ -102,18 +132,6 @@
   margin: 0;
   padding: 0;
 }
-.cardFunction .cardFunction__button {
-  color: #ba1313;
-  font-family: "Montserrat";
-  font-size: 18px;
-  font-weight: bold;
-  border: 0;
-  border-radius: 50px;
-  width: 90%;
-  height: 10%;
-  background-color: white;
-  cursor: pointer;
-}
 @media screen and (max-width: 767px) {
   .cardFunction {
     background-color: #ba1313;
@@ -143,6 +161,20 @@
     text-align: center;
     font-size: 9px;
   }
+}
+
+.cardFunction__button {
+  color: #ba1313;
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: bold;
+  border: 0;
+  border-radius: 50px;
+  width: 90%;
+  height: 10%;
+  background-color: white;
+  cursor: pointer;
 }
 
 .cardInformation {

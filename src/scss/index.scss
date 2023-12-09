@@ -71,6 +71,10 @@ $secondlyFont: 'Montserrat';
     flex-direction: column;
 }
 
+body{
+    text-align: center !important;
+}
+
 .content {
     @include content(white)
 }
@@ -103,6 +107,49 @@ $secondlyFont: 'Montserrat';
 
     }
 
+}
+
+
+// CORRUSEL
+
+.carousel{
+    margin: {
+        top: 50px;
+        bottom: 50px;
+    }
+}
+
+.carousel-inner{
+
+padding: {
+    top: 60px;
+    bottom: 60px;
+}
+    
+background-color: $primaryColor;
+    .carousel-item{
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 356px;
+
+            .info{
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+
+
+                h1{
+                    font-family: $primaryFont;
+                    color: #ffffff !important;
+                }
+                
+            }
+
+
+        }
+    }
 }
 
 // ARTICULOS DE INFORMACION
@@ -159,23 +206,7 @@ $secondlyFont: 'Montserrat';
         align-items: left;
     }
 
-    .cardFunction__button {
-        color: $primaryColor;
 
-        font: {
-            family: $secondlyFont;
-            size: 18px;
-            weight: bold;
-        }
-
-        border: 0;
-        border-radius: 50px;
-        width: 90%;
-        height: 10%;
-        background-color: white;
-        cursor: pointer;
-
-    }
 
     // TAMAÑO MOVIL
     @media screen and (max-width: 767px) {
@@ -204,6 +235,25 @@ $secondlyFont: 'Montserrat';
         }
 
     }
+}
+
+.cardFunction__button {
+    color: $primaryColor;
+    text-decoration: none;
+
+    font: {
+        family: $secondlyFont;
+        size: 18px;
+        weight: bold;
+    }
+
+    border: 0;
+    border-radius: 50px;
+    width: 90%;
+    height: 10%;
+    background-color: white;
+    cursor: pointer;
+
 }
 
 // CARTA DE INFORMACION

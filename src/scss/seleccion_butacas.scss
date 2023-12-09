@@ -8,7 +8,7 @@ $primaryFont: 'Bebas Neue';
 $secondFont: 'Montserrat';
 $thirdFont: 'Merryweather';
 
-@mixin h2(){
+@mixin h2() {
     margin: {
         top: 5%;
         bottom: 0;
@@ -19,7 +19,7 @@ $thirdFont: 'Merryweather';
     font-family: $primaryFont;
 }
 
-@mixin h3(){
+@mixin h3() {
     margin: {
         top: 0;
         bottom: 5%;
@@ -42,7 +42,6 @@ $thirdFont: 'Merryweather';
 
     display: flex;
     flex-direction: column;
-    background-color: #6C78A3;
     align-items: center;
     justify-content: center;
 
@@ -63,6 +62,7 @@ $thirdFont: 'Merryweather';
 
             h2 {
                 @include h2();
+                color: $primaryColor;
             }
 
             h3 {
@@ -95,9 +95,8 @@ $thirdFont: 'Merryweather';
 
 .selection {
     width: 100%;
-    height: 500px;
+    height: auto;
 
-    background-color: #6ca37a;
 
     display: flex;
     flex-direction: column;
@@ -107,25 +106,87 @@ $thirdFont: 'Merryweather';
     .title {
         width: 100%;
         height: 15%;
-        background-color: brown;
+        background-color: $primaryColor;
         @include h2();
+
     }
 
     .gridButacas {
-        background-color: rgb(170, 170, 103);
         width: 100%;
         height: 70%;
+
+        .butacas {
+            width: 100%;
+            height: 380px;
+            display: grid;
+            grid-template-rows: repeat(10, 30px);
+            grid-gap: 5px;
+            justify-content: center;
+            align-items: center;
+
+            .fila {
+                padding: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 15%;
+            }
+
+            
+
+            .butaca {
+                width: 22px;
+                height: 22px;
+                background-size: cover;
+                cursor: pointer;
+                margin: 3px;
+
+            }
+
+            .libre{
+                background-image: url('../../iconos/icons8-sillón-100-BLANCO.png');
+            }
+
+            .ocupada{
+                background-image: url('../../iconos/icons8-sillón-100-NEGRO.png');
+            }
+
+            .seleccionada{
+                background-image: url('../../iconos/icons8-sillón-100-ROJO.png');
+            }
+
+
+        }
+
+        .escenario {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 50px;
+            div{
+                background-color: #D9D9D9;
+
+                height: 100%;
+                width: 60%;
+            }
+            font-family: $secondFont;
+        }
     }
 
     .button {
-        background-color: palegoldenrod;
         width: 100%;
         height: 15%;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
         a {
             color: #ffffff;
             text-decoration: none;
             background-color: $primaryColor;
-            padding: 2%;
+            padding: 10px;
 
             font: {
                 family: $secondFont;
@@ -150,4 +211,43 @@ $thirdFont: 'Merryweather';
 
         }
     }
+
+    .selection {
+    
+        .gridButacas {
+
+    
+            .butacas {
+                height: 415px;
+                grid-gap: 8px;
+                
+    
+                .butaca {
+                    width: 37px;
+                    height: 35px;
+                    margin: 5px;
+
+                }
+            }
+
+
+            .escenario {
+
+                div{    
+                    margin-top: 35px;
+                }
+            }
+    
+        }
+
+        .button {
+            
+            margin: 45px;
+
+
+        }
+    
+
+    }
+    
 }

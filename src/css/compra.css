@@ -33,6 +33,7 @@ body {
   margin-left: 6%;
   margin-right: 6%;
   font-family: "Bebas Neue";
+  color: #ba1313;
 }
 .info h3 {
   margin-top: 0;
@@ -67,7 +68,7 @@ body {
   font-family: "Montserrat";
 }
 .pago .menu div input {
-  border: 2px solid #ba1313;
+  border: 2px solid #000000;
   border-radius: 50px;
   padding-bottom: 10px;
   padding-top: 10px;

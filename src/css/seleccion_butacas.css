@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Merryweather");
@@ -12,7 +13,6 @@
   height: auto;
   display: flex;
   flex-direction: column;
-  background-color: #6C78A3;
   align-items: center;
   justify-content: center;
 }
@@ -34,6 +34,7 @@
   margin-left: 6%;
   margin-right: 6%;
   font-family: "Bebas Neue";
+  color: #ba1313;
 }
 .info__text div h3 {
   margin-top: 0;
@@ -55,8 +56,7 @@
 
 .selection {
   width: 100%;
-  height: 500px;
-  background-color: #6ca37a;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -65,7 +65,7 @@
 .selection .title {
   width: 100%;
   height: 15%;
-  background-color: brown;
+  background-color: #ba1313;
   margin-top: 5%;
   margin-bottom: 0;
   margin-left: 6%;
@@ -73,20 +73,67 @@
   font-family: "Bebas Neue";
 }
 .selection .gridButacas {
-  background-color: rgb(170, 170, 103);
   width: 100%;
   height: 70%;
 }
+.selection .gridButacas .butacas {
+  width: 100%;
+  height: 380px;
+  display: grid;
+  grid-template-rows: repeat(10, 30px);
+  grid-gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+.selection .gridButacas .butacas .fila {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15%;
+}
+.selection .gridButacas .butacas .butaca {
+  width: 22px;
+  height: 22px;
+  background-size: cover;
+  cursor: pointer;
+  margin: 3px;
+}
+.selection .gridButacas .butacas .libre {
+  background-image: url("../../iconos/icons8-sillón-100-BLANCO.png");
+}
+.selection .gridButacas .butacas .ocupada {
+  background-image: url("../../iconos/icons8-sillón-100-NEGRO.png");
+}
+.selection .gridButacas .butacas .seleccionada {
+  background-image: url("../../iconos/icons8-sillón-100-ROJO.png");
+}
+.selection .gridButacas .escenario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  font-family: "Montserrat";
+}
+.selection .gridButacas .escenario div {
+  background-color: #D9D9D9;
+  height: 100%;
+  width: 60%;
+}
 .selection .button {
-  background-color: palegoldenrod;
   width: 100%;
   height: 15%;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .selection .button a {
   color: #ffffff;
   text-decoration: none;
   background-color: #ba1313;
-  padding: 2%;
+  padding: 10px;
   font-family: "Montserrat";
   font-size: 18px;
   border-radius: 50px;
@@ -96,6 +143,21 @@
 @media screen and (min-width: 767px) {
   .info__img {
     width: 30%;
+  }
+  .selection .gridButacas .butacas {
+    height: 415px;
+    grid-gap: 8px;
+  }
+  .selection .gridButacas .butacas .butaca {
+    width: 37px;
+    height: 35px;
+    margin: 5px;
+  }
+  .selection .gridButacas .escenario div {
+    margin-top: 35px;
+  }
+  .selection .button {
+    margin: 45px;
   }
 }
 

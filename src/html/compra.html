@@ -25,7 +25,8 @@
             </div>
             <div>
                 <h2>BUTACAS SELECCIONADAS</h2>
-                <h3>HORA DE LA FUNCIÓN</h3>
+
+                <h3 id="butacasSeleccionadas"></h3>
             </div>
         </div>
         <div class="pago">
@@ -88,6 +89,15 @@
     </div>
 
     <script src="../js/compra.js"></script>
+    <script>
+        // Recupera las butacas seleccionadas de sessionStorage
+        const butacasSeleccionadas = JSON.parse(sessionStorage.getItem('butacasSeleccionadas'));
+      
+        // Muestra las butacas seleccionadas en la página de la pasarela de pago
+        const butacasMostradas = document.getElementById('butacasSeleccionadas');
+        butacasMostradas.textContent = `Butacas seleccionadas: ${butacasSeleccionadas.join(', ')}`;
+      </script>
+
 </body>
 
 </html>

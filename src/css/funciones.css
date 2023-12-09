@@ -71,6 +71,7 @@
   right: 0;
   width: 30%;
   height: auto;
+  background-color: #fff;
 }
 .sidebar .filter {
   width: 100%;
@@ -137,10 +138,14 @@
 
 .iconFilter {
   display: block;
-  height: 15px;
-  width: 15px;
+  height: auto;
+  width: auto;
   background-color: #ba1313;
-  margin-left: 90%;
+  border-radius: 50px;
+  padding: 9px;
+  color: #fff;
+  font-family: "Montserrat";
+  margin-left: 70%;
   margin-top: 15px;
   margin-right: 15px;
   margin-bottom: 15px;
