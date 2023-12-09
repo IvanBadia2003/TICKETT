@@ -57,7 +57,7 @@ $primaryFont: 'Bebas Neue';
             justify-content: center;
 
             img {
-                max-width: 20%; // Hacer que las imágenes sean responsive
+                max-width: 13%; // Hacer que las imágenes sean responsive
                 height: auto;
             }
         }
@@ -66,11 +66,9 @@ $primaryFont: 'Bebas Neue';
     // Media query para hacerlo responsive
     @media screen and (max-width: 767px) {
         font-size: 12px; // Reducir el tamaño de fuente base en pantallas pequeñas
-
-        .footer__media {
-            img {
-                max-width: 20%; // Reducir el tamaño de las imágenes en pantallas pequeñas
-            }
+        .footer .footer__links .footer__media img {
+            max-width: 20%;
+            height: auto;
         }
     }
 }

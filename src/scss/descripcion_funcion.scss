@@ -177,6 +177,8 @@ section {
                 family: $thirdFont;
             }
 
+            list-style: none;
+
             text-align: justify;
 
         }
@@ -205,7 +207,6 @@ section {
         }
 
         div {
-            background-color: aquamarine;
             height: 100%;
             width: 300px;
 

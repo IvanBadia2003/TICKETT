@@ -156,6 +156,7 @@ section h3 {
 .cast div ul {
   font-size: 18px;
   font-family: "Merryweather";
+  list-style: none;
   text-align: justify;
 }
 
@@ -184,7 +185,6 @@ section h3 {
     font-size: 48px;
   }
   .principal div {
-    background-color: aquamarine;
     height: 100%;
     width: 300px;
     display: flex;

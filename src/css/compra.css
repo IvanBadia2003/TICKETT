@@ -79,13 +79,17 @@ body {
 
 .buttons {
   margin-top: 20px;
+  padding-bottom: 30px;
 }
 .buttons a {
   text-decoration: none;
-  border: 1px solid black;
+  font-weight: bold;
+  border: 2px solid #ba1313;
   border-radius: 50px;
   padding: 15px;
   margin: 30px;
+  font-family: "Montserrat";
+  color: #ba1313;
 }
 
 /* PARA ORDENADORES */

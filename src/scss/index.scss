@@ -147,6 +147,10 @@ background-color: $primaryColor;
                 
             }
 
+            img{
+                border-radius: 15px;
+                
+            }
 
         }
     }
@@ -241,6 +245,10 @@ background-color: $primaryColor;
     color: $primaryColor;
     text-decoration: none;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     font: {
         family: $secondlyFont;
         size: 18px;
@@ -258,24 +266,37 @@ background-color: $primaryColor;
 
 // CARTA DE INFORMACION
 .cardInformation {
-    @include card(350px, 550px);
+    @include card(350px, 450px);
+    cursor: pointer;
 
     .cardInformation__img {
-        background-image: url('../../IMAGENES/jose-el-sonador.jpg');
         width: 90%;
         height: 65%;
         border-radius: 15px;
         background-size: cover;
+        background-position: center;
+        
+    }
+
+    .taquilla{
+        background-image: url('../../IMAGENES/Rectangle\ 208.png');
+    }
+
+    .teatro{
+        background-image: url('../../IMAGENES/teatro.png');
+
+    }
+    .proteccion{
+        background-image: url('../../IMAGENES/proteccion.png');
     }
 
     .cardInformation__text {
         width: 90%;
-        height: 25%;
+        height: auto;
         color: white;
 
         font: {
             family: $primaryFont;
-            size: 18px;
         }
 
         display: flex;
