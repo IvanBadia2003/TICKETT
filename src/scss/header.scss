@@ -107,6 +107,19 @@ body {
 
         .icons__hamburguer {
             display: none;
+            cursor: pointer;
+
+        }
+
+
+        .icons__cart {
+            cursor: pointer;
+
+        }
+
+        .icons__user {
+            cursor: pointer;
+
         }
 
     }
@@ -172,7 +185,6 @@ body {
 
             .icons__hamburguer {
                 display: block;
-                cursor: pointer;
 
             }
 

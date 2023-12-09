@@ -82,6 +82,13 @@ body {
 }
 .icons ul .icons__hamburguer {
   display: none;
+  cursor: pointer;
+}
+.icons ul .icons__cart {
+  cursor: pointer;
+}
+.icons ul .icons__user {
+  cursor: pointer;
 }
 .icons img {
   width: 50px;
@@ -126,7 +133,6 @@ body {
   }
   .icons ul .icons__hamburguer {
     display: block;
-    cursor: pointer;
   }
   .icons ul .icons__cart {
     display: none;
