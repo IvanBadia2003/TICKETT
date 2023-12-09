@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 body {
@@ -233,3 +234,208 @@ body {
 }
 
 /*# sourceMappingURL=index.css.map */
+=======
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+.content {
+  background-color: white;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+
+.content__gray {
+  background-color: #D9D9D9;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+
+.title {
+  background-color: #ba1313;
+  color: white;
+  text-decoration: none;
+  height: auto;
+}
+.title h2 {
+  font-family: "Bebas Neue";
+  font-size: 30px;
+}
+
+.articlesFunction {
+  height: 75%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (max-width: 767px) {
+  .articlesFunction {
+    flex-flow: row;
+  }
+}
+
+.articlesInformation {
+  height: 75%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+}
+
+.cardFunction {
+  background-color: #ba1313;
+  width: 350px;
+  height: 550px;
+  margin-right: 6%;
+  margin-left: 6%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  border-radius: 15px 15px 5px 5px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  cursor: default;
+}
+.cardFunction .cardFunction__img {
+  width: 90%;
+  height: auto;
+}
+.cardFunction .cardFunction__img img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+.cardFunction .cardFunction__text {
+  width: 90%;
+  height: 25%;
+  color: white;
+  text-align: left;
+  font-family: "Bebas Neue";
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+}
+.cardFunction .cardFunction__text h2 {
+  margin: 0;
+  padding: 0;
+}
+.cardFunction .cardFunction__text h3 {
+  margin: 0;
+  padding: 0;
+}
+.cardFunction .cardFunction__button {
+  color: #ba1313;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: bold;
+  border: 0;
+  border-radius: 50px;
+  width: 90%;
+  height: 10%;
+  background-color: white;
+  cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+  .cardFunction {
+    background-color: #ba1313;
+    width: 250px;
+    height: 250px;
+    margin-right: 6%;
+    margin-left: 6%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 15px 15px 5px 5px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: default;
+    margin: 5%;
+    position: relative;
+  }
+  .cardFunction .cardFunction__text {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: 16px;
+  }
+  .cardFunction .cardFunction__button {
+    text-align: center;
+    font-size: 9px;
+  }
+}
+
+.cardInformation {
+  background-color: #ba1313;
+  width: 350px;
+  height: 550px;
+  margin-right: 6%;
+  margin-left: 6%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  border-radius: 15px 15px 5px 5px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  cursor: default;
+}
+.cardInformation .cardInformation__img {
+  background-image: url("../../IMAGENES/jose-el-sonador.jpg");
+  width: 90%;
+  height: 65%;
+  border-radius: 15px;
+  background-size: cover;
+}
+.cardInformation .cardInformation__text {
+  width: 90%;
+  height: 25%;
+  color: white;
+  font-family: "Bebas Neue";
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+}
+@media screen and (max-width: 767px) {
+  .cardInformation {
+    background-color: #ba1313;
+    width: 150px;
+    height: 250px;
+    margin-right: 6%;
+    margin-left: 6%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 15px 15px 5px 5px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: default;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
+>>>>>>> 71bfe208580e829623cb0be37106c42a6a9d9c88
