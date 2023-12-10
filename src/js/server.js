@@ -14,7 +14,8 @@ let obras = [
     diaObra:'22/11/2003',
     horaObra:'13:00',
     imagenObra:'../../IMAGENES/donjuan.jpg',
-    reparto: 'Autor 1'
+    reparto: 'Autor 1',
+    genero:'romance'
   },
   {
     id: 2,
@@ -23,7 +24,8 @@ let obras = [
     diaObra:'23/11/2023',
     horaObra:'16:00',
     imagenObra:'../../IMAGENES/celestina.jpg',
-    reparto: 'Autor 1'
+    reparto: 'Autor 1',
+    genero:'romance'
   },
   {
     id: 3,
@@ -32,7 +34,8 @@ let obras = [
     diaObra:'23/11/2023',
     horaObra:'19:00',
     imagenObra:'../../IMAGENES/funcion-sale.mal.jpg',
-    reparto: 'Autor 1'
+    reparto: 'Autor 1',
+    genero:'thriller'
   },
   {
     id: 4,
@@ -41,7 +44,8 @@ let obras = [
     diaObra:'24/11/2023',
     horaObra:'16:00',
     imagenObra:'../../IMAGENES/laponia.jpg',
-    reparto: 'Autor 1'
+    reparto: 'Autor 1',
+    genero:'thriller'
   },
   {
     id: 5,
@@ -50,7 +54,8 @@ let obras = [
     diaObra:'24/11/2023',
     horaObra:'12:00',
     imagenObra:'../../IMAGENES/jose-el-sonador.jpg',
-    reparto: 'Autor 1'
+    reparto: 'Autor 1',
+    genero:'drama'
   },
   {
     id: 6,
@@ -59,7 +64,8 @@ let obras = [
     diaObra:'25/11/2023',
     horaObra:'17:30',
     imagenObra:'../../IMAGENES/el-mago-pop.jpg',
-    reparto: 'Autor 1'
+    reparto: 'Autor 1',
+    genero:'monologo'
   },
   {
     id: 7,
@@ -68,7 +74,8 @@ let obras = [
     diaObra:'26/11/2023',
     horaObra:'18:15',
     imagenObra:'../../IMAGENES/ilusionate.jpg',
-    reparto: 'Autor 1'
+    reparto: 'Autor 1',
+    genero:'monologo'
   },
   {
     id: 8,
@@ -77,7 +84,8 @@ let obras = [
     diaObra:'29/11/2023',
     horaObra:'18:00',
     imagenObra:'../../IMAGENES/las-mil-y-una-noches.jpg',
-    reparto: 'Autor 1'
+    reparto: 'Autor 1',
+    genero:'comedia',
   },
   {
     id: 9,
@@ -86,7 +94,8 @@ let obras = [
     diaObra:'02/12/2023',
     horaObra:'12:00',
     imagenObra:'../../IMAGENES/ElReyLeon3Aniv200.jpg',
-    reparto: 'Autor 1'
+    reparto: 'Autor 1',
+    genero:'musical'
   },
   {
     id: 10,
@@ -95,7 +104,8 @@ let obras = [
     diaObra:'09/12/2023',
     horaObra:'20:00',
     imagenObra:'../../IMAGENES/campeones.jpg',
-    reparto: 'Autor 1'
+    reparto: 'Autor 1',
+    genero:'comedia'
   },
   {
     id: 11,
@@ -104,7 +114,8 @@ let obras = [
     diaObra:'18/12/2023',
     horaObra:'12:00',
     imagenObra:'../../IMAGENES/fango.jpg',
-    reparto: 'Autor 1'
+    reparto: 'Autor 1',
+    genero:'monologo'
   },
   {
     id: 12,
@@ -113,7 +124,8 @@ let obras = [
     diaObra:'25/12/2023',
     horaObra:'20:30',
     imagenObra:'../../IMAGENES/doble-o-nada.jpg',
-    reparto: 'Autor 1'
+    reparto: 'Autor 1',
+    genero:'thriller'
   },
  
 ];
