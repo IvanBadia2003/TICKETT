@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding-top: 25px;
   background-color: #ba1313;
   color: white;
   font-family: Arial, sans-serif;
@@ -22,7 +22,7 @@
 }
 .footer .footer__links ul li a {
   font-family: "Bebas Neue";
-  font-size: 18px;
+  font-size: 24px;
   text-decoration: none;
   color: white;
 }
@@ -38,7 +38,7 @@
   justify-content: center;
 }
 .footer .footer__links .footer__media img {
-  max-width: 13%;
+  max-width: 7%;
   height: auto;
 }
 @media screen and (max-width: 767px) {

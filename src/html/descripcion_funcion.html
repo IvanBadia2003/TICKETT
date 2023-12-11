@@ -41,29 +41,29 @@
 
         <!-- CONTENIDO DE LA PÁGINA -->
         <div class="content">
-            <h2>TITULO</h2>
+            <h2></h2>
             <section class="first">
                 <div class="principal">
 
                     <div>
                         <img src="../../IMAGENES/jose-el-sonador.jpg" alt="">
-                        <a href="seleccion_butacas.html">SELECCIONAR BUTACAS</a>
+                        <a href="#" id="seleccionarButacas">SELECCIONAR BUTACAS</a>
                     </div>
                 </div>
                 <div class="secundary">
                     <div class="date">
                         <h3>Horario</h3>
                         <div class="date__data">
-                            <h3>Dia: 26/11/2003</h3>
-                            <h3>Hora: 12:00</h3>
+                            <h3></h3>
+                            <h3></h3>
                         </div>
                     </div>
                     <div class="information">
                         <h3>Información</h3>
                         <div class="information__data">
-                            <h3>Duracion: duracion</h3>
-                            <h3>Precio: precio</h3>
-                            <h3>Género: genero</h3>
+                            <h3></h3>
+                            <h3></h3>
+                            <h3></h3>
                         </div>
                     </div>
                 </div>
@@ -75,8 +75,7 @@
 
                     <h3>Descripcion</h3>
                     <div>
-                        <p>"El Rey León" es un deslumbrante musical que transporta a los espectadores a las majestuosas llanuras africanas. Con una mezcla envolvent
-                            e de música, danza y una historia poderosa sobre el valor y el destino, sigue la emocionante aventura de Simba mientras descubre su camino para reclamar su lugar como rey. Con impactantes efectos visuales y la inolvidable música de Elton John y Tim Rice, este espectáculo cautiva a audiencias de todas las edades con su magia y emoción.</p>
+                        <p></p>
                     </div>
 
                 </div>
@@ -84,12 +83,6 @@
                     <h3>Reparto</h3>
                     <div>
                         <ul>
-                            <li>Actor 1</li>
-                            <li>Actor 2</li>
-                            <li>Actor 3</li>
-                            <li>Actor 4</li>
-                            <li>Actor 5</li>
-                            <li>Actor 6</li>
                         </ul>
                     </div>
                 </div>
@@ -132,6 +125,27 @@
 
     </div>
     <script src="../js/header.js"></script>
+    <script src="../js/descripcion_funcion.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const seleccionarButacasLink = document.getElementById('seleccionarButacas');
+          seleccionarButacasLink.addEventListener('click', (event) => {
+            event.preventDefault(); // Prevenir el comportamiento predeterminado del enlace
+        
+            // Obtener el ID de la función de la URL actual
+            const urlParams = new URLSearchParams(window.location.search);
+            const funcionId = urlParams.get('id');
+        
+            if (funcionId) {
+              // Redirigir a seleccion_butacas.html manteniendo el ID de la función en la URL
+              window.location.href = `seleccion_butacas.html?id=${funcionId}`;
+            } else {
+              console.error('No se encontró el ID de la función en la URL');
+            }
+          });
+        });
+        </script>
 
 </body>
 

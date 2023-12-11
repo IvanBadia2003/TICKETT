@@ -132,10 +132,14 @@ background-color: $primaryColor;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 356px;
+            height: 350px;
+            margin: {
+                left: 50px;
+                right: 50px;
+            } 
 
             .info{
-                width: 30%;
+                width: 20%;
                 display: flex;
                 flex-direction: column;
 
@@ -143,14 +147,23 @@ background-color: $primaryColor;
                 h1{
                     font-family: $primaryFont;
                     color: #ffffff !important;
+                    font-size: 80px;
                 }
                 
             }
 
-            img{
-                border-radius: 15px;
-                
+            .containerImg{
+                width: 15%;
+                height: 90%;
+
+                img{
+                    width: 100%;
+                    height: auto;
+                    border-radius: 15px;
+                    
+                }
             }
+
 
         }
     }
@@ -173,11 +186,11 @@ background-color: $primaryColor;
 
     .cardFunction__img {
         width: 90%;
-        height: auto;
+        height: 65%;
 
         img {
             width: 100%;
-            height: auto;
+            height: 100%;
             border-radius: 15px;
 
         }
@@ -185,7 +198,6 @@ background-color: $primaryColor;
 
     .cardFunction__text {
         width: 90%;
-        height: 25%;
         color: white;
         text-align: left;
 

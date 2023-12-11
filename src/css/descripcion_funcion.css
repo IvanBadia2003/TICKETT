@@ -8,6 +8,9 @@
 
 h2 {
   font-family: "Bebas Neue";
+  font-size: 60px;
+  margin-top: 20px;
+  margin-bottom: 0;
 }
 
 section {
@@ -52,7 +55,7 @@ section h3 {
   font-weight: bold;
   border-radius: 50px;
   border: 3px solid #ba1313;
-  width: 98%;
+  width: 100%;
 }
 
 .date {
@@ -167,7 +170,7 @@ section h3 {
     justify-content: center;
   }
   .principal {
-    width: 50%;
+    width: 30%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -207,7 +210,7 @@ section h3 {
     width: 98%;
   }
   .secundary {
-    width: 50%;
+    width: 30%;
     height: 100%;
     display: flex;
     flex-direction: column;
