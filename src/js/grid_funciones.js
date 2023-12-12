@@ -1,10 +1,8 @@
-// Obtener los elementos de los radio buttons y los menús
 const iconFilter = document.getElementById('iconFilter');
 const close = document.getElementById('close');
 const filtros = document.getElementById('sidebar');
-const checkboxes = document.querySelectorAll('.genre'); // Obtener los checkboxes de género
+const checkboxes = document.querySelectorAll('.genre'); 
 
-// Función para mostrar el menú correspondiente a la opción seleccionada
 function mostrarFiltros() {
   if (filtros.style.display === 'block') {
     filtros.style.display = 'none';
@@ -13,7 +11,7 @@ function mostrarFiltros() {
   }
 }
 
-// Función para cerrar el menú correspondiente a la opción seleccionada
+
 function cerrarFiltros() {
   if (filtros.style.display === 'none') {
     filtros.style.display = 'block';
@@ -22,13 +20,13 @@ function cerrarFiltros() {
   }
 }
 
-// Función para filtrar funciones por género
+
 function filtrarPorGenero() {
   const selectedGenres = Array.from(checkboxes)
     .filter(checkbox => checkbox.checked)
     .map(checkbox => checkbox.value);
 
-  const url = 'http://localhost:3000/obras'; // URL de la API de las funciones
+  const url = 'http://localhost:3000/obras'; 
 
   fetch(url)
     .then(response => {
@@ -38,17 +36,17 @@ function filtrarPorGenero() {
       return response.json();
     })
     .then(data => {
-      const container = document.querySelector('.functions'); // Obtener el contenedor de funciones
+      const container = document.querySelector('.functions'); 
 
-      // Verificar si no se ha seleccionado ningún género
+      // NO HAY FILTROS PUESTOS
       if (selectedGenres.length === 0) {
-        // Mostrar todas las funciones si no hay géneros seleccionados
+
         data.forEach(funcion => {
           const article = document.createElement('article');
           article.classList.add('card');
         
           const anchor = document.createElement('a');
-          anchor.href = `descripcion_funcion.html?id=${funcion.id}`; // Incluyendo el ID en la URL
+          anchor.href = `descripcion_funcion.html?id=${funcion.id}`; 
         
           const imgContainer = document.createElement('div');
           imgContainer.classList.add('imgContainer');
@@ -78,16 +76,17 @@ function filtrarPorGenero() {
           container.appendChild(article);
         });
       } else {
-        // Filtrar las funciones por género seleccionado
+
+        // HAY FILTROS PUESTOS
+
         const filteredFunctions = data.filter(funcion => selectedGenres.includes(funcion.genero));
 
-        // Recorrer funciones filtradas y crear elementos HTML para cada una
         filteredFunctions.forEach(funcion => {
           const article = document.createElement('article');
           article.classList.add('card');
         
           const anchor = document.createElement('a');
-          anchor.href = `descripcion_funcion.html?id=${funcion.id}`; // Incluyendo el ID en la URL
+          anchor.href = `descripcion_funcion.html?id=${funcion.id}`; 
         
           const imgContainer = document.createElement('div');
           imgContainer.classList.add('imgContainer');
@@ -121,10 +120,10 @@ function filtrarPorGenero() {
     .catch(error => console.error('There has been a problem with your fetch operation:', error));
 }
 
-// Agregar event listener a cada checkbox para el filtro por género
+
 checkboxes.forEach(checkbox => {
   checkbox.addEventListener('change', filtrarPorGenero);
 });
 
-// Llamar a la función para mostrar todas las funciones al cargar la página
+
 document.addEventListener('DOMContentLoaded', filtrarPorGenero);

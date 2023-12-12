@@ -1750,12 +1750,12 @@ let obras = [
 ];
 
 
-// Obtener lista de obras
+// OBTENER OBRAS
 app.get('/obras', (req, res) => {
   res.json(obras);
 });
 
-// Obtener detalles de una obra por ID
+// OBTENER DETALLES OBRA
 app.get('/obras/:id', (req, res) => {
   const id = parseInt(req.params.id);
   const obra = obras.find(o => o.id === id);
@@ -1766,14 +1766,13 @@ app.get('/obras/:id', (req, res) => {
   }
 });
 
-// Agregar una nueva obra
+// AGREGAR OBRA
 app.post('/obras', (req, res) => {
   const nuevaObra = req.body;
   obras.push(nuevaObra);
   res.send('Obra agregada correctamente');
 });
 
-// Actualizar detalles de una obra por ID
 app.put('/obras/:id', (req, res) => {
   const id = parseInt(req.params.id);
   const obraIndex = obras.findIndex(o => o.id === id);
@@ -1786,7 +1785,7 @@ app.put('/obras/:id', (req, res) => {
 });
 
 
-
+// ACTUALIZAR BUTACA
 app.put('/obras/:idObra/butacas/:idButaca', (req, res) => {
   const idObra = parseInt(req.params.idObra);
   const idButaca = parseInt(req.params.idButaca);
@@ -1801,7 +1800,6 @@ app.put('/obras/:idObra/butacas/:idButaca', (req, res) => {
     if (!butaca) {
       res.status(404).send('Butaca no encontrada en la obra');
     } else {
-      // Actualizar el estado de la butaca con el estado recibido en el cuerpo de la solicitud
       butaca.estado = req.body.estado;
 
       res.send('Estado de la butaca actualizado exitosamente');
@@ -1810,15 +1808,15 @@ app.put('/obras/:idObra/butacas/:idButaca', (req, res) => {
 });
 
 
-// Eliminar una obra por ID
+// ELIMINAR OBRA
 app.delete('/obras/:id', (req, res) => {
   const id = parseInt(req.params.id);
   obras = obras.filter(o => o.id !== id);
   res.send('Obra eliminada correctamente');
 });
 
-// Puerto en el que se ejecuta el servidor
-const PORT = 3000;
+// PUERTO SERVIDOR
+const PORT = 4000;
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en el puerto ${PORT}`);
 });

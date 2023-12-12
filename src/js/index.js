@@ -1,4 +1,3 @@
-// Función para obtener los detalles de una obra por su ID
 function obtenerDetallesObraPorId(id) {
     return fetch(`obras/${id}`)
       .then(response => {
@@ -13,11 +12,9 @@ function obtenerDetallesObraPorId(id) {
       });
   }
   
-  // Obtener los elementos HTML a modificar
   const primeraCardFunction = document.querySelector('.articlesFunction .cardFunction:nth-child(1)');
   const segundaCardFunction = document.querySelector('.articlesFunction .cardFunction:nth-child(2)');
   
-  // Actualizar la primera cardFunction con los detalles de la obra 1
   obtenerDetallesObraPorId(1)
     .then(obra => {
       if (obra) {
@@ -33,7 +30,6 @@ function obtenerDetallesObraPorId(id) {
       }
     });
   
-  // Actualizar la segunda cardFunction con los detalles de la obra 2
   obtenerDetallesObraPorId(2)
     .then(obra => {
       if (obra) {
