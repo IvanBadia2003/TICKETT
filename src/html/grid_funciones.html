@@ -41,13 +41,10 @@
 
         <!-- CONTENIDO DE LA PÁGINA -->
         <div class="content">
-            <div class="iconFilter" id="iconFilter">
+            <div class="iconFilter" id="iconFilter" onclick="mostrarFiltros()">
                 FILTROS
             </div>
             <section class="functions">
-
-
-
 
             </section>
 
@@ -62,14 +59,13 @@
                         <ul>
                             <li><input type="checkbox" class="genre" value="drama">DRAMA</li>
                             <li><input type="checkbox" class="genre" value="romance">ROMANCE</li>
-                            <li><input type="checkbox" class="genre" value="tragedia">TRAGEDIA</li>
                             <li><input type="checkbox" class="genre" value="comedia">COMEDIA</li>
                             <li><input type="checkbox" class="genre" value="musical">MUSICAL</li>
                             <li><input type="checkbox" class="genre" value="monologo">MONÓLOGO</li>
                             <li><input type="checkbox" class="genre" value="thriller">THRILLER</li>
                         </ul>
                     </div>
-                    <div class="close" id="close">
+                    <div class="close" id="close" onclick="cerrarFiltros()">
                         cerrar
                     </div>
                 </div>

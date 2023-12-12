@@ -136,6 +136,14 @@
   background-color: #ba1313;
 }
 
+.close {
+  padding: 12px;
+  background-color: #ba1313;
+  border: 2px solid black;
+  color: white;
+  font-family: "Montserrat";
+}
+
 .iconFilter {
   display: block;
   height: auto;

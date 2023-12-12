@@ -203,6 +203,14 @@ $secondlyFont: 'Montserrat';
 
 }
 
+.close{
+    padding: 12px;
+    background-color: #ba1313;
+    border: 2px solid black;
+    color: white;
+    font-family: $secondlyFont;
+}
+
 .iconFilter {
     display: block;
     height: auto;
@@ -263,7 +271,8 @@ $secondlyFont: 'Montserrat';
 
     .close {
         display: none;
-
+ 
+    
     }
 
 
